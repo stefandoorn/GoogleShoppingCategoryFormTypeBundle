@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Form\Type;
 
-use StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Resolver\GoogleShoppingCategories;
 use StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Resolver\GoogleShoppingCategoriesResolver;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\ChoiceList\Loader\CallbackChoiceLoader;
