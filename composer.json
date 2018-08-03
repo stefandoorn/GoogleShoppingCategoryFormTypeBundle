@@ -1,7 +1,7 @@
 {
     "name": "stefandoorn/google-shopping-category-form-type-bundle",
     "description": "Form type to select a Google Shopping Category ID",
-    "type": "library",
+    "type": "symfony-bundle",
     "require": {
         "php": "^7.1",
         "symfony/symfony": "^3.3|^4.0"
