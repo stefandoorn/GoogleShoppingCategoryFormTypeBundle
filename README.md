@@ -1,2 +1,3 @@
-# GoogleShoppingCategoryFormType
+# GoogleShoppingCategoryFormTypeBundle
+
 Form type to select a Google Shopping Category ID 

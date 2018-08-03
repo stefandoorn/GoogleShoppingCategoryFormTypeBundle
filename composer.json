@@ -1,0 +1,31 @@
+{
+    "name": "stefandoorn/google-shopping-category-form-type-bundle",
+    "description": "Form type to select a Google Shopping Category ID",
+    "type": "library",
+    "require": {
+        "php": "^7.1",
+        "symfony/symfony": "^3.0|^4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stefan Doorn",
+            "email": "stefan@efectos.nl"
+        }
+    ],
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "StefanDoorn\\GoogleShoppingCategoryFormTypeBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "StefanDoorn\\GoogleShoppingCategoryFormTypeBundle\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.10.2",
+        "symfony/phpunit-bridge": "*"
+    }
+}
