@@ -1,6 +1,8 @@
 services:
     google_shopping_category.resolver.categories:
         class: StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Resolver\GoogleShoppingCategories
+        arguments:
+            - '@google_shopping_category.downloader.category'
 
     google_shopping_category.resolver.categories_cached:
         decorates: 'google_shopping_category.resolver.categories'
@@ -14,3 +16,6 @@ services:
         arguments:
             - '@google_shopping_category.resolver.categories'
         tags: [form.type]
+
+    google_shopping_category.downloader.category:
+        class: StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Downloader\GoogleShoppingCategoryList

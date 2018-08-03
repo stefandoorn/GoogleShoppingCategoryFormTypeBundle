@@ -4,29 +4,25 @@ declare(strict_types=1);
 
 namespace StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Resolver;
 
+use StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Downloader\GoogleShoppingCategoryListDownloader;
+
 final class GoogleShoppingCategories implements GoogleShoppingCategoriesResolver
 {
     /**
-     * @var string
+     * @var GoogleShoppingCategoryListDownloader
      */
-    private $locale;
+    private $downloader;
 
-    public function __construct(string $locale = 'en_US')
+    public function __construct(GoogleShoppingCategoryListDownloader $categoryListDownloader)
     {
-        $this->locale = $locale;
+        $this->downloader = $categoryListDownloader;
     }
 
     public function get(): array
     {
-        $data = file_get_contents(self::url($this->locale));
-
-        if (false === $data) {
-            throw new \Exception('Could not load Google Shopping Categories list');
-        }
-
         $categories = [];
 
-        foreach (explode(PHP_EOL, $data) as $key => $line) {
+        foreach (explode(PHP_EOL, $this->downloader->fetch()) as $key => $line) {
             if ('' === $line) {
                 continue;
             }
@@ -41,15 +37,5 @@ final class GoogleShoppingCategories implements GoogleShoppingCategoriesResolver
         }
 
         return $categories;
-    }
-
-    private static function url(string $locale): string
-    {
-        return sprintf('https://www.google.com/basepages/producttype/taxonomy-with-ids.%s.txt', self::locale($locale));
-    }
-
-    private static function locale(string $locale): string
-    {
-        return str_replace('_', '-', $locale);
     }
 }
