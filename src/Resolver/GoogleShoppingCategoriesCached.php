@@ -8,7 +8,6 @@ use Symfony\Component\Cache\Adapter\AdapterInterface;
 
 final class GoogleShoppingCategoriesCached implements GoogleShoppingCategoriesResolver
 {
-
     /**
      * @var GoogleShoppingCategoriesResolver
      */
@@ -28,8 +27,7 @@ final class GoogleShoppingCategoriesCached implements GoogleShoppingCategoriesRe
         GoogleShoppingCategoriesResolver $googleShoppingCategoriesResolver,
         AdapterInterface $cacheAdapter,
         ?int $ttl = null
-    )
-    {
+    ) {
         $this->resolver = $googleShoppingCategoriesResolver;
         $this->cache = $cacheAdapter;
 

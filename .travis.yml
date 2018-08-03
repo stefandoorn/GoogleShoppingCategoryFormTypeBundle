@@ -51,4 +51,5 @@ install:
 script:
     - composer validate --strict --no-check-lock
     - ./vendor/bin/phpstan analyse --level max src/
+    - ./vendor/bin/ecs check src/
     - ./vendor/bin/simple-phpunit $PHPUNIT_FLAGS

@@ -6,7 +6,6 @@ namespace StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Resolver;
 
 final class GoogleShoppingCategories implements GoogleShoppingCategoriesResolver
 {
-
     /**
      * @var string
      */
@@ -27,7 +26,7 @@ final class GoogleShoppingCategories implements GoogleShoppingCategoriesResolver
 
         $categories = [];
 
-        foreach(explode(PHP_EOL, $data) as $key => $line) {
+        foreach (explode(PHP_EOL, $data) as $key => $line) {
             if ('' === $line) {
                 continue;
             }
