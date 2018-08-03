@@ -1,0 +1,16 @@
+services:
+    google_shopping_category.resolver.categories:
+        class: StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Resolver\GoogleShoppingCategories
+
+    google_shopping_category.resolver.categories_cached:
+        decorates: 'google_shopping_category.resolver.categories'
+        class: StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Resolver\GoogleShoppingCategoriesCached
+        arguments:
+            - '@google_shopping_category.resolver.categories_cached.inner'
+            - '@cache.app'
+
+    google_shopping_category.form.category:
+        class: StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Form\Type\GoogleShoppingCategoryType
+        arguments:
+            - '@google_shopping_category.resolver.categories'
+        tags: [form.type]
