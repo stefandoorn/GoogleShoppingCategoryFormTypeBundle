@@ -18,10 +18,10 @@ final class GoogleShoppingCategoryList implements GoogleShoppingCategoryListDown
 
     public function fetch(): string
     {
-        $data = file_get_contents(self::url($this->locale));
+        $data = @file_get_contents(self::url($this->locale));
 
         if (false === $data) {
-            throw new \Exception('Could not load Google Shopping Categories list');
+            throw new \Exception(sprintf('Could not load Google Shopping Categories list for locale %s', $this->locale));
         }
 
         return $data;
