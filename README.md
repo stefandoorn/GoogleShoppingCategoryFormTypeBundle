@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/stefandoorn/GoogleShoppingCategoryFormTypeBundle.svg?branch=master)](https://travis-ci.org/stefandoorn/GoogleShoppingCategoryFormTypeBundle)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=stefandoorn/GoogleShoppingCategoryFormTypeBundle)](https://dependabot.com)
 
 # GoogleShoppingCategoryFormTypeBundle
 
