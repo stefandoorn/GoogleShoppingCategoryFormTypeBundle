@@ -15,14 +15,10 @@ use Symfony\Component\Form\Test\TypeTestCase;
 
 final class GoogleShoppingCategoryTypeTest extends TypeTestCase
 {
-    /**
-     * @var GoogleShoppingCategoryListDownloader|\PHPUnit\Framework\MockObject\MockObject
-     */
+    /** @var GoogleShoppingCategoryListDownloader|\PHPUnit\Framework\MockObject\MockObject */
     private $downloader;
 
-    /**
-     * @var GoogleShoppingCategoriesResolver
-     */
+    /** @var GoogleShoppingCategoriesResolver */
     private $resolver;
 
     protected function setUp()

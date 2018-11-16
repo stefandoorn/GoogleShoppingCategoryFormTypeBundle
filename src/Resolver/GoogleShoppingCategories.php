@@ -8,9 +8,7 @@ use StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Downloader\GoogleShoppingCa
 
 final class GoogleShoppingCategories implements GoogleShoppingCategoriesResolver
 {
-    /**
-     * @var GoogleShoppingCategoryListDownloader
-     */
+    /** @var GoogleShoppingCategoryListDownloader */
     private $downloader;
 
     public function __construct(GoogleShoppingCategoryListDownloader $categoryListDownloader)
@@ -22,7 +20,7 @@ final class GoogleShoppingCategories implements GoogleShoppingCategoriesResolver
     {
         $categories = [];
 
-        foreach (explode(PHP_EOL, $this->downloader->fetch()) as $key => $line) {
+        foreach (explode(\PHP_EOL, $this->downloader->fetch()) as $key => $line) {
             if ('' === $line) {
                 continue;
             }

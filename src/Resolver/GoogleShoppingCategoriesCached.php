@@ -8,19 +8,13 @@ use Symfony\Component\Cache\Adapter\AdapterInterface;
 
 final class GoogleShoppingCategoriesCached implements GoogleShoppingCategoriesResolver
 {
-    /**
-     * @var GoogleShoppingCategoriesResolver
-     */
+    /** @var GoogleShoppingCategoriesResolver */
     private $resolver;
 
-    /**
-     * @var AdapterInterface
-     */
+    /** @var AdapterInterface */
     private $cache;
 
-    /**
-     * @var int
-     */
+    /** @var int */
     private $ttl = 86400;
 
     public function __construct(
