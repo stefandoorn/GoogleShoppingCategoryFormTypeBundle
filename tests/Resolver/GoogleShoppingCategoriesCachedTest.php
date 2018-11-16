@@ -12,19 +12,13 @@ use Symfony\Component\Cache\Adapter\AdapterInterface;
 
 final class GoogleShoppingCategoriesCachedTest extends TestCase
 {
-    /**
-     * @var GoogleShoppingCategoriesResolver|\PHPUnit\Framework\MockObject\MockObject
-     */
+    /** @var GoogleShoppingCategoriesResolver|\PHPUnit\Framework\MockObject\MockObject */
     private $resolver;
 
-    /**
-     * @var AdapterInterface|\PHPUnit\Framework\MockObject\MockObject
-     */
+    /** @var AdapterInterface|\PHPUnit\Framework\MockObject\MockObject */
     private $cache;
 
-    /**
-     * @var CacheItemInterface|\PHPUnit\Framework\MockObject\MockObject
-     */
+    /** @var CacheItemInterface|\PHPUnit\Framework\MockObject\MockObject */
     private $item;
 
     /**

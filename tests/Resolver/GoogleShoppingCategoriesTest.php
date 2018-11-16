@@ -11,9 +11,7 @@ use StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Resolver\GoogleShoppingCate
 
 final class GoogleShoppingCategoriesTest extends TestCase
 {
-    /**
-     * @var MockObject|GoogleShoppingCategoryListDownloader
-     */
+    /** @var MockObject|GoogleShoppingCategoryListDownloader */
     private $downloader;
 
     /**
