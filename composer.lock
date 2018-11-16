@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "109ef4950a4ba9e8a0282919e213a4df",
+    "content-hash": "86a9b598ee37171452a4ad305a8f9050",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -3998,23 +3998,29 @@
         },
         {
             "name": "sylius-labs/coding-standard",
-            "version": "v2.0.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SyliusLabs/CodingStandard.git",
-                "reference": "a6f3a2b0dd8ef2b54958d3b374b650e7e9fc6cad"
+                "reference": "5a0f55073bd18a36afd544d0c93399a3598cf249"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SyliusLabs/CodingStandard/zipball/a6f3a2b0dd8ef2b54958d3b374b650e7e9fc6cad",
-                "reference": "a6f3a2b0dd8ef2b54958d3b374b650e7e9fc6cad",
+                "url": "https://api.github.com/repos/SyliusLabs/CodingStandard/zipball/5a0f55073bd18a36afd544d0c93399a3598cf249",
+                "reference": "5a0f55073bd18a36afd544d0c93399a3598cf249",
                 "shasum": ""
             },
             "require": {
+                "friendsofphp/php-cs-fixer": "^2.12",
                 "php": "^7.1",
-                "symplify/easy-coding-standard": "^4.2.1"
+                "symplify/easy-coding-standard": "^4.5|^5.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -4027,7 +4033,7 @@
                 }
             ],
             "description": "Battle-tested coding standard configuration used in Sylius.",
-            "time": "2018-05-15T08:21:42+00:00"
+            "time": "2018-11-13T15:10:46+00:00"
         },
         {
             "name": "symfony/polyfill-php70",
