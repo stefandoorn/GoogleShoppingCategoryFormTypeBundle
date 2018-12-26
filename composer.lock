@@ -1681,16 +1681,16 @@
         },
         {
             "name": "matthiasnoback/symfony-dependency-injection-test",
-            "version": "v3.0.0",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyTest/SymfonyDependencyInjectionTest.git",
-                "reference": "17e93d791c39849edce452723928b8172691e9c9"
+                "reference": "7d3bf407fb36bb013b59e8b28b97b3224a3d2b2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyTest/SymfonyDependencyInjectionTest/zipball/17e93d791c39849edce452723928b8172691e9c9",
-                "reference": "17e93d791c39849edce452723928b8172691e9c9",
+                "url": "https://api.github.com/repos/SymfonyTest/SymfonyDependencyInjectionTest/zipball/7d3bf407fb36bb013b59e8b28b97b3224a3d2b2c",
+                "reference": "7d3bf407fb36bb013b59e8b28b97b3224a3d2b2c",
                 "shasum": ""
             },
             "require": {
@@ -1730,7 +1730,7 @@
                 "dependency injection",
                 "phpunit"
             ],
-            "time": "2018-03-06T08:36:41+00:00"
+            "time": "2018-12-25T14:38:34+00:00"
         },
         {
             "name": "myclabs/deep-copy",
