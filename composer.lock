@@ -1094,16 +1094,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v4.2.3",
+            "version": "v4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "323bfa04458188fbac1be4fbc60b83b9b2496cfc"
+                "reference": "7998cfb802cd3b91719a9b428f0f97ea5bbabe10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/323bfa04458188fbac1be4fbc60b83b9b2496cfc",
-                "reference": "323bfa04458188fbac1be4fbc60b83b9b2496cfc",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/7998cfb802cd3b91719a9b428f0f97ea5bbabe10",
+                "reference": "7998cfb802cd3b91719a9b428f0f97ea5bbabe10",
                 "shasum": ""
             },
             "require": {
@@ -1251,7 +1251,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2019-02-03T12:47:44+00:00"
+            "time": "2019-03-03T19:38:27+00:00"
         },
         {
             "name": "twig/twig",
@@ -4497,6 +4497,7 @@
                 "MIT"
             ],
             "description": "Set of utils for PHP_CodeSniffer and PHP CS Fixer.",
+            "abandoned": "https://github.com/symplify/codingstandard",
             "time": "2019-02-28T12:38:37+00:00"
         },
         {
