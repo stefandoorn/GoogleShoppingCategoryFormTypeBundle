@@ -3991,22 +3991,26 @@
         },
         {
             "name": "sylius-labs/coding-standard",
-            "version": "v3.1.1",
+            "version": "v3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SyliusLabs/CodingStandard.git",
-                "reference": "3cd7fd2e4e8589db792c134859df70d153504cc8"
+                "reference": "4b932456bca4ebf0b450f3b274446162ba221825"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SyliusLabs/CodingStandard/zipball/3cd7fd2e4e8589db792c134859df70d153504cc8",
-                "reference": "3cd7fd2e4e8589db792c134859df70d153504cc8",
+                "url": "https://api.github.com/repos/SyliusLabs/CodingStandard/zipball/4b932456bca4ebf0b450f3b274446162ba221825",
+                "reference": "4b932456bca4ebf0b450f3b274446162ba221825",
                 "shasum": ""
             },
             "require": {
                 "friendsofphp/php-cs-fixer": "^2.12",
                 "php": "^7.1",
-                "symplify/easy-coding-standard": "^5.0||^6.0||^7.0"
+                "symplify/easy-coding-standard": "^6.0||^7.0"
+            },
+            "conflict": {
+                "symplify/package-builder": "^7.2",
+                "symplify/smart-file-system": "^7.2"
             },
             "type": "library",
             "extra": {
@@ -4026,7 +4030,7 @@
                 }
             ],
             "description": "Battle-tested coding standard configuration used in Sylius.",
-            "time": "2019-11-29T10:41:29+00:00"
+            "time": "2020-01-30T14:18:21+00:00"
         },
         {
             "name": "symfony/polyfill-php70",
