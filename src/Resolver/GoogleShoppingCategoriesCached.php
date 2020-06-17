@@ -37,7 +37,7 @@ final class GoogleShoppingCategoriesCached implements GoogleShoppingCategoriesRe
 
             $cache->set($data);
             
-            if ($this-ttl) {
+            if ($this->ttl) {
                 $cache->expiresAfter($this->ttl);
             }
 
