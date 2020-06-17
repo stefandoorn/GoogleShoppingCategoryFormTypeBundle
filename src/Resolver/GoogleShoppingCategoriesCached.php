@@ -15,19 +15,16 @@ final class GoogleShoppingCategoriesCached implements GoogleShoppingCategoriesRe
     private $cache;
 
     /** @var int */
-    private $ttl = 86400;
+    private $ttl;
 
     public function __construct(
         GoogleShoppingCategoriesResolver $googleShoppingCategoriesResolver,
         AdapterInterface $cacheAdapter,
-        ?int $ttl = null
+        ?int $ttl = 86400
     ) {
         $this->resolver = $googleShoppingCategoriesResolver;
         $this->cache = $cacheAdapter;
-
-        if (null !== $ttl) {
-            $this->ttl = $ttl;
-        }
+        $this->ttl = $ttl;
     }
 
     public function get(): array
@@ -38,9 +35,11 @@ final class GoogleShoppingCategoriesCached implements GoogleShoppingCategoriesRe
         if (!$cache->isHit()) {
             $data = $this->resolver->get();
 
-            $cache
-              ->set($data)
-              ->expiresAfter($this->ttl);
+            $cache->set($data);
+            
+            if ($this-ttl) {
+                $cache->expiresAfter($this->ttl);
+            }
 
             $this->cache->save($cache);
         }
