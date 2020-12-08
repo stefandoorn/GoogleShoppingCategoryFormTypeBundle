@@ -3,8 +3,8 @@
     "description": "Form type to select a Google Shopping Category ID",
     "type": "symfony-bundle",
     "require": {
-        "php": "^7.1",
-        "symfony/symfony": "^3.3|^4.0"
+        "php": "^7.3",
+        "symfony/symfony": "^4.0"
     },
     "license": "MIT",
     "authors": [
@@ -27,8 +27,8 @@
     "require-dev": {
         "matthiasnoback/symfony-dependency-injection-test": "^3.0",
         "phpstan/phpstan": "^0.12.59",
-        "phpunit/phpunit": "^6.5|^7.3",
-        "sylius-labs/coding-standard": "^2.0|^3.0",
+        "phpunit/phpunit": "^7.3",
+        "sylius-labs/coding-standard": "^3.0",
         "symplify/easy-coding-standard": "^8.3"
     }
 }
