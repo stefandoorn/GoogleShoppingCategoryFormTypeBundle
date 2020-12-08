@@ -6,5 +6,8 @@ namespace StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Resolver;
 
 interface GoogleShoppingCategoriesResolver
 {
+    /**
+     * @return string[]
+     */
     public function get(): array;
 }

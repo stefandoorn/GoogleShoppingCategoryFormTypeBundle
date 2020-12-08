@@ -21,7 +21,7 @@ final class GoogleShoppingCategoryType extends AbstractType
         $this->categoriesResolver = $categoriesResolver;
     }
 
-    public function configureOptions(OptionsResolver $resolver)
+    public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
             'choice_loader' => new CallbackChoiceLoader(function () {
@@ -33,7 +33,7 @@ final class GoogleShoppingCategoryType extends AbstractType
         ]);
     }
 
-    public function getParent()
+    public function getParent(): string
     {
         return ChoiceType::class;
     }

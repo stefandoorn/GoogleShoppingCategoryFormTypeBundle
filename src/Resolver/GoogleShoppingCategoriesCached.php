@@ -14,7 +14,7 @@ final class GoogleShoppingCategoriesCached implements GoogleShoppingCategoriesRe
     /** @var AdapterInterface */
     private $cache;
 
-    /** @var int */
+    /** @var int|null */
     private $ttl;
 
     public function __construct(
@@ -27,6 +27,9 @@ final class GoogleShoppingCategoriesCached implements GoogleShoppingCategoriesRe
         $this->ttl = $ttl;
     }
 
+    /**
+     * @return string[]
+     */
     public function get(): array
     {
         $cacheKey = str_replace('\\', '_', self::class);

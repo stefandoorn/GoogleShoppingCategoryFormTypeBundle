@@ -16,6 +16,9 @@ final class GoogleShoppingCategories implements GoogleShoppingCategoriesResolver
         $this->downloader = $categoryListDownloader;
     }
 
+    /**
+     * @return string[]
+     */
     public function get(): array
     {
         $categories = [];
