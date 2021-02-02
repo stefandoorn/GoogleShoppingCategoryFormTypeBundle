@@ -4155,20 +4155,20 @@
         },
         {
             "name": "sylius-labs/coding-standard",
-            "version": "v3.2.1",
+            "version": "v3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SyliusLabs/CodingStandard.git",
-                "reference": "c366a69562980ff7798e8acaa2fd9200ebce530d"
+                "reference": "5fdbf84b23b20d713a13262fd0ca94f4fafa1744"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SyliusLabs/CodingStandard/zipball/c366a69562980ff7798e8acaa2fd9200ebce530d",
-                "reference": "c366a69562980ff7798e8acaa2fd9200ebce530d",
+                "url": "https://api.github.com/repos/SyliusLabs/CodingStandard/zipball/5fdbf84b23b20d713a13262fd0ca94f4fafa1744",
+                "reference": "5fdbf84b23b20d713a13262fd0ca94f4fafa1744",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1",
+                "php": "^7.1 || ^8.0",
                 "slevomat/coding-standard": "^6.3",
                 "symplify/easy-coding-standard": "^7.3 || ^8.1"
             },
@@ -4190,7 +4190,7 @@
                 }
             ],
             "description": "Battle-tested coding standard configuration used in Sylius.",
-            "time": "2020-08-12T09:15:18+00:00"
+            "time": "2021-02-01T15:30:50+00:00"
         },
         {
             "name": "symfony/polyfill-php70",
@@ -4772,12 +4772,12 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
