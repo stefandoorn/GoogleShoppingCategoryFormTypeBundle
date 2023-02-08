@@ -26,7 +26,7 @@
         }
     },
     "require-dev": {
-        "matthiasnoback/symfony-dependency-injection-test": "^3.0",
+        "matthiasnoback/symfony-dependency-injection-test": "^4.3",
         "phpstan/phpstan": "^0.12.59",
         "phpunit/phpunit": "^9.5",
         "sylius-labs/coding-standard": "^3.0",
