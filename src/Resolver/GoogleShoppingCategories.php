@@ -8,17 +8,13 @@ use StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Downloader\GoogleShoppingCa
 
 final class GoogleShoppingCategories implements GoogleShoppingCategoriesResolver
 {
-    /** @var GoogleShoppingCategoryListDownloader */
-    private $downloader;
+    private GoogleShoppingCategoryListDownloader $downloader;
 
     public function __construct(GoogleShoppingCategoryListDownloader $categoryListDownloader)
     {
         $this->downloader = $categoryListDownloader;
     }
 
-    /**
-     * @return string[]
-     */
     public function get(): array
     {
         $categories = [];

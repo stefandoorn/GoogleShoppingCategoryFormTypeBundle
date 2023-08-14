@@ -6,8 +6,7 @@ namespace StefanDoorn\GoogleShoppingCategoryFormTypeBundle\Downloader;
 
 final class GoogleShoppingCategoryList implements GoogleShoppingCategoryListDownloader
 {
-    /** @var string */
-    private $locale;
+    private string $locale;
 
     public function __construct(string $locale = 'en_US')
     {

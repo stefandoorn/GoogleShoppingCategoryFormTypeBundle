@@ -3,9 +3,9 @@
     "description": "Form type to select a Google Shopping Category ID",
     "type": "symfony-bundle",
     "require": {
-        "php": "^7.3",
-        "symfony/form": "^4.0|^5.0",
-        "symfony/framework-bundle": "^4.0|^5.0"
+        "php": "^7.4 || ^8.1",
+        "symfony/form": "^4.0 || ^5.0",
+        "symfony/framework-bundle": "^4.0 || ^5.0"
     },
     "license": "MIT",
     "authors": [
@@ -27,9 +27,14 @@
     },
     "require-dev": {
         "matthiasnoback/symfony-dependency-injection-test": "^4.3",
-        "phpstan/phpstan": "^0.12.59",
+        "phpstan/phpstan": "^1.0",
         "phpunit/phpunit": "^9.5",
-        "sylius-labs/coding-standard": "^3.0",
-        "symplify/easy-coding-standard": "^8.3"
+        "sylius-labs/coding-standard": "^4.3",
+        "symplify/easy-coding-standard": "^11.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
 }

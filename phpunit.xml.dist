@@ -16,16 +16,13 @@
         </testsuite>
     </testsuites>
 
-    <filter>
-        <whitelist>
-            <directory>./</directory>
-            <exclude>
-                <directory>./Resources</directory>
-                <directory>./tests</directory>
-                <directory>./vendor</directory>
-            </exclude>
-        </whitelist>
-    </filter>
+    <coverage>
+        <exclude>
+            <directory>./Resources</directory>
+            <directory>./tests</directory>
+            <directory>./vendor</directory>
+        </exclude>
+    </coverage>
 
     <php>
         <server name="KERNEL_CLASS" value="AppKernel" />

@@ -12,8 +12,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 final class GoogleShoppingCategoryType extends AbstractType
 {
-    /** @var GoogleShoppingCategoriesResolver */
-    private $categoriesResolver;
+    private GoogleShoppingCategoriesResolver $categoriesResolver;
 
     public function __construct(
         GoogleShoppingCategoriesResolver $categoriesResolver

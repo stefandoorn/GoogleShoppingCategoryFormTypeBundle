@@ -8,14 +8,11 @@ use Symfony\Component\Cache\Adapter\AdapterInterface;
 
 final class GoogleShoppingCategoriesCached implements GoogleShoppingCategoriesResolver
 {
-    /** @var GoogleShoppingCategoriesResolver */
-    private $resolver;
+    private GoogleShoppingCategoriesResolver $resolver;
 
-    /** @var AdapterInterface */
-    private $cache;
+    private AdapterInterface $cache;
 
-    /** @var int|null */
-    private $ttl;
+    private ?int $ttl;
 
     public function __construct(
         GoogleShoppingCategoriesResolver $googleShoppingCategoriesResolver,
@@ -27,9 +24,6 @@ final class GoogleShoppingCategoriesCached implements GoogleShoppingCategoriesRe
         $this->ttl = $ttl;
     }
 
-    /**
-     * @return string[]
-     */
     public function get(): array
     {
         $cacheKey = str_replace('\\', '_', self::class);
